@@ -1,8 +1,10 @@
 rm  *.fps
 ########
 
-gsutil ls gs://pubchem_fps/Compound*.sdf.fps | sed -n '1,1410p' > WorkList_FPS0
-gsutil ls gs://pubchem_fps/Compound*.sdf.fps | sed -n '1411,2816p' > WorkList_FPS1
+gsutil ls gs://pubchem_fps/Compound*.sdf.fps | sed -n '1,705p' > WorkList_FPS0
+gsutil ls gs://pubchem_fps/Compound*.sdf.fps | sed -n '706,1410p' > WorkList_FPS1
+gsutil ls gs://pubchem_fps/Compound*.sdf.fps | sed -n '1411,2115p' > WorkList_FPS2
+gsutil ls gs://pubchem_fps/Compound*.sdf.fps | sed -n '2116,2816p' > WorkList_FPS3
 
 ########
 filecontent=(`cat "WorkList_FPS0"`)
